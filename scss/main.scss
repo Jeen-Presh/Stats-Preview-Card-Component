@@ -1,0 +1,104 @@
+@import 'variables';
+// Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Core Styling
+body {
+    background: $dark-blue;
+    color: $white-text;
+    Font-size: 15px;
+    line-height: 1.4;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 .7rem .7rem 0;
+}
+
+// Utility classes
+.lead-text{
+    font-family: 'Inter', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.description-text{
+    font-family: 'Inter', cursive;
+    font-weight: 400;
+    font-size: .8rem;
+    color: $main-paragraph;
+    margin: 2rem 0;
+    line-height: 1.9;
+}
+
+.text-style {color: $soft-violet;}
+
+.bg-primary {background:$card-bg;}
+
+.stats {
+    font-family: 'Inter', cursive;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.stat-text {
+    font-family: 'Lexend Deca', cursive;
+    font-weight: 400;
+    font-size: .6rem;
+    color: $stats-heading;
+    letter-spacing: .1rem;
+}
+
+.overlay::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $dark-violet;
+    opacity: 0.4;
+}
+
+// Main Styling
+.card {
+    max-width: 65rem;
+    display: flex;
+    border-radius: .7rem;
+
+    picture {
+        flex: 50%;
+        border-radius: 0 .7rem .7rem 0;
+        position: relative;
+    }
+
+    .info-left {
+        flex: 50%;
+        padding: 4rem 6rem;
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin-top: 4.5rem;
+
+            li {
+             flex: 1
+            }
+        }
+    }
+}
+@import'media';
